@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Backtest Strategy",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/nse_strategy_1/Backtest_strategy_1.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}"
+      }
+    ]
+  }
+  
