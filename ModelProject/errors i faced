@@ -1,0 +1,26 @@
+errors i faced on that steup 
+
+error 1 :
+'/home/tharun/Thanush_new_project_v1/ModelProject/nse_strategy_1/application.properties'
+ change the path name to your project name 
+
+
+ to find this give command 
+find ~/your projectname name "application.properties"
+it will return 
+a link of yours 
+
+error 2
+go to path.py 
+
+/home/tharun/on that change the source path to /home/tharun/your project name 
+
+
+error 3
+find ~/your projectname -name "ind_nifty500list.csv"
+
+inside Portfolio_with_sector.py
+industries = pd.read_csv(r'/home/tharun/your project name /ModelProject/prices/ind_nifty500list.csv', index_col='Symbol')
+
+
+
