@@ -1,0 +1,83 @@
+go to terminal 
+
+create a folder through mkdir
+mkdir ~/Thanush_relearned_project_v1
+or create a folder and paste the  file their 
+
+cd ~/Thanush_relearned_project_v1(your project folder name)
+
+
+This will create and enter your new workspace.
+
+
+
+
+
+Let’s create a new environment, for example called `nse_env_relearn`:
+
+in Terminal 
+
+conda create --name nse_env_relearn python=3.9.7
+
+here on conda --name nse_env_relearn the above name was unique environment in conda
+env so you can name it on your name own
+```
+
+Then activate it:
+
+```
+conda activate nse_env_relearn
+```
+
+
+
+1. Open VS Code.
+2. Go to:
+
+ 
+   File → Open Folder → Select `Thanush_relearned_project_v1(your project _name)
+  
+3. give cd ~ to open vs code terminal 
+
+   conda activate nse_env_relearn
+  
+step 4: Set Interpreter to Python 3.9.7 (Conda)
+
+1. Press:
+
+   ```
+   Ctrl + Shift + P
+   ```
+2. Type:
+
+   ```
+   Python: Select Interpreter
+   ```
+3. Choose:
+
+   ```
+   Python 3.9.7 (conda: nse_env_relearn)
+   ```
+
+If it doesn't show, click **"Enter interpreter path"** and paste this:
+
+```bash
+/home/tharun/anaconda3/envs/nse_env_relearn/bin/python
+```
+or 
+in my case right bottom of vs code i seen the utf after that we can see the version of python 
+this happens when you open python file in given code 
+through if you click that on that python version you have chance to see and activate the interpreter
+
+ STEP 5
+
+If you already have a `requirements.txt`
+on vs code terminal after step 4 you can do this install requirements 
+
+
+pip install -r requirements.txt
+```
+
+Or install manually using:
+
+
