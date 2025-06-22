@@ -1,0 +1,24 @@
+ `backtest.py`
+
+This is the main controller of the project. It reads key settings 
+like strategy type, investment amount, date range, etc., from `application.properties`.
+Using those values, it gathers price data and runs the entire backtesting logic.
+
+ `pricedata.py`
+
+This module prepares the stock price data based on the source and file path defined in 
+`application.properties`. It formats the data properly so the strategy can be applied on it. 
+It plays a supporting role for `backtest.py`.
+
+ `portfolio_sector.py`
+
+This handles portfolio tracking and profit analysis. 
+It calculates how much was invested, the current value, profit/loss, and gives sector-wise breakdowns. 
+It works on stocks from the Nifty 500 list.
+
+`nsesector.py`
+
+This maps each stock to its NSE sector and runs the selected trading strategy on it.
+Strategy rules like RSI thresholds are pulled from the `strategy_params` in the config.
+It decides when to buy or sell based on those rules.
+
